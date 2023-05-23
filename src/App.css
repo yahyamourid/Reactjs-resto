@@ -1,0 +1,23 @@
+
+.app-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden; /* Masque la barre de défilement horizontale */
+}
+
+
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+

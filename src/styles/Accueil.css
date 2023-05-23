@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2E86C1;
+  --secondary-color: #FFFFFF;
+  --text-color: #1C1C1C;
+  --bg-color: #F7F7F7;
+  --hover-color: #E1E1E1;
+  --font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  align-self: center;
+  margin-top: 200px;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px; /* Adjust the max-width to your preference */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px var(--hover-color);
+  z-index: 1;
+  
+}
+.container2 {
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px var(--hover-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Set flex-direction to row */
+}
+
+.container3 {
+  position: relative;
+  height: 500px; /* Adjust the height as needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 15px; /* Adjust the top margin as needed */
+}
+
+
+nav select,
+button,
+.dropdown-toggle {
+  flex: 1;
+  margin: 0 0.5rem; /* Adjust the margin to your preference */
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav select > option {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+button {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+nav select:hover,
+button:hover {
+  color: var(--primary-color);
+}
+
+.dropdown-item {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+.dropdown-item.active,
+.dropdown-item:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown-toggle:hover {
+  color: var(--primary-color);
+  background-color: rgba(255, 222, 173, 0);
+}
+
+
+
+.nbr-resto {
+  color: var(--text-color);
+  text-align: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 100%;
+  max-width: 900px;
+  margin-left: -140px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-info {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.image-description {
+  font-size: 14px;
+  margin: 0;
+}
+@media only screen and (max-width: 1000px){
+  nav  {
+    flex-direction: column;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container, .container2 {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+  nav select{
+    margin-bottom: 30px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal {
+margin-top: 100px;
+  }
+}
