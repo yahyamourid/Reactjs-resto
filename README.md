@@ -14,6 +14,10 @@ This is a ReactJS project that allows users to select a city and an area, and it
 ## Video Demo
 
 
+https://github.com/yahyamourid/Reactjs-resto/assets/128039351/419c25dc-a309-43b5-8542-5e82327f7326
+
+
+
 ## Prerequisites
 
 Make sure you have the following installed before running the project:
