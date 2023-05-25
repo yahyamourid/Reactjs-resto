@@ -13,19 +13,19 @@ function Header() {
   return (
     <header>
       <nav ref={navRef} className={showNav ? "responsive_nav" : ""}>
-        <a className="logo" href="/#">
+        <a className="logo" href="/">
           <h3>Food-Points</h3>
         </a>
         <div className="menu">
-          <a href="/#">
+          <a href="/">
             <FaHome className="icon" />
             Accueil
           </a>
-          <a href="/#">
+          <a href="/apropos">
             <FaInfoCircle className="icon" />
             A propos
           </a>
-          <a href="/#">
+          <a href="/contact">
             <FaEnvelope className="icon" />
             Contact
           </a>

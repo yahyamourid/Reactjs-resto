@@ -113,7 +113,7 @@ const Accueil = () => {
 
 
     const [showDetailsModal, setShowDetailsModal] = useState(false);
-    const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+    const [selectedRestaurant, setSelectedRestaurant] = useState({"name":"","cords":""});
 
     const handleShowDetailsModal = (restaurantId) => {
         axios.get(`https://resto-api-dun.vercel.app/api/restos/${restaurantId}`)
@@ -270,7 +270,7 @@ const Accueil = () => {
 
                 <Modal className='modal' show={showDetailsModal} onHide={handleCloseDetailsModal}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Détails du restaurant - </Modal.Title>
+                        <Modal.Title>Détails du restaurant -{selectedRestaurant.name}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         {selectedRestaurant && (

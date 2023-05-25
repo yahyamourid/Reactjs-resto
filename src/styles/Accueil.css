@@ -24,6 +24,7 @@
   max-width: 1000px; /* Adjust the max-width to your preference */
   display: flex;
   align-items: center;
+  height: 100px;
   justify-content: space-around;
   padding: 2rem;
   background-color: var(--bg-color);
@@ -89,6 +90,7 @@ button {
   background-color: var(--primary-color);
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -156,6 +158,12 @@ button:hover {
   padding: 10px;
   margin: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  transition: transform 0.3s ease;
+}
+.image-item:hover {
+  transform: scale(0.9);
 }
 
 .image {
@@ -165,9 +173,12 @@ button:hover {
 }
 
 .image-info {
-  background-color: #fff;
+  background-color: #2e86c124;
   padding: 10px;
   text-align: center;
+  width: 300px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 .image-title {
@@ -179,6 +190,9 @@ button:hover {
   font-size: 14px;
   margin: 0;
 }
+.modal {
+  margin-top: 100px;
+    }
 @media only screen and (max-width: 1000px){
   nav  {
     flex-direction: column;
@@ -205,7 +219,5 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  .modal {
-margin-top: 100px;
-  }
+  
 }
