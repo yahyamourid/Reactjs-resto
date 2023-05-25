@@ -24,7 +24,7 @@
   max-width: 1000px; /* Adjust the max-width to your preference */
   display: flex;
   align-items: center;
-  height: 100px;
+
   justify-content: space-around;
   padding: 2rem;
   background-color: var(--bg-color);
