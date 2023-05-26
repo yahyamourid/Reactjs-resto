@@ -74,7 +74,7 @@ const Contact = () => {
       <div className="contact-info">
         <div className="info-item">
           <FontAwesomeIcon icon={faEnvelope} />
-          <p>foodpoints@example.com</p>
+          <p>foodpoints@gmail.com</p>
         </div>
         <div className="info-item">
           <FontAwesomeIcon icon={faPhone} />
